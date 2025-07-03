@@ -48,6 +48,26 @@ python main.py
 pytest
 ```
 
+## 🐳 Exécuter avec Docker
+
+### 1. Construire l’image Docker
+
+```bash
+docker build -t tweet-classifier .
+```
+
+### 2. Lancer les tests dans Docker
+
+```bash
+docker run --rm -it tweet-classifier pytest
+```
+
+### 3. Lancer un conteneur pour exécuter le pipeline
+
+```bash
+docker run --rm -it tweet-classifier
+```
+
 ## 🧪 Exemple de sortie
 
 ✅ Dataset chargé avec succès.
