@@ -6,9 +6,11 @@ Il suit les bonnes pratiques de data science industrielle : nettoyage, modélisa
 ---
 
 ## 📁 Structure du projet
+```
 tweet_project/
-├── data/ # Contient tweets.csv
-├── notebooks/ # EDA et pipeline interactif
+├── data/
+  └── tweets.csv
+├── notebooks/
 │ ├── 01_EDA.ipynb
 │ └── 02_Preprocessing_Modeling.ipynb
 ├── src/ # Code source
@@ -17,10 +19,11 @@ tweet_project/
 ├── tests/ # Tests unitaires
 │ ├── test_preprocessing.py
 │ └── test_modeling.py
-├── main.py # Script principal d'entraînement
-├── requirements.txt # Dépendances Python
-├── Dockerfile # (Optionnel) pour exécution conteneurisée
-└── README.md # Ce fichier
+├── main.py
+├── requirements.txt
+├── Dockerfile
+└── README.md
+```
 
 ## ▶️ Exécuter le projet (en local)
 
@@ -69,7 +72,7 @@ docker run --rm -it tweet-classifier
 ```
 
 ## 🧪 Exemple de sortie
-
+```
 ✅ Dataset chargé avec succès.
 Nombre d'exemples : 7613
 
@@ -78,3 +81,4 @@ Accuracy  : 0.8004
 Precision : 0.8108
 Recall    : 0.6934
 F1 Score  : 0.7475
+```
